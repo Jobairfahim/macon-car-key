@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Toyota and Lexus key service in Macon, GA - Replacement, ignition repair and programming">
+<title>Toyota / Lexus - Macon Car Key Locksmith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Additional styles for Toyota page */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-wrapper h2 {
+  color: var(--primary);
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.content-wrapper h2:first-child {
+  margin-top: 0;
+}
+
+.content-wrapper ul {
+  margin: 20px 0;
+  padding-left: 24px;
+}
+
+.content-wrapper ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.content-wrapper blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 20px;
+  margin: 24px 0;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.cta-banner {
+  text-align: center;
+  margin-top: 48px;
+  padding: 32px;
+  background: var(--bg2);
+  border-radius: var(--radius);
+  border: 2px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 16px;
+  }
+  
+  .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.webp" alt="Macon Car Key Locksmith" style="height: 60px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">
+        Home
+      </a>
+      <div class="dropdown">
+        <div class="nav-item">
+          Services
+          ▾
+        </div>
+        <div class="dropdown-menu">
+          <a href="honda.html"><span class="dm-icon">🚗</span> Honda / Acura</a>
+          <a href="toyota.html" class="active"><span class="dm-icon">🚗</span> Toyota / Lexus</a>
+          <a href="nissan.html"><span class="dm-icon">🚗</span> Nissan / Infiniti</a>
+          <a href="ford.html"><span class="dm-icon">🚗</span> Ford / Lincoln</a>
+          <a href="dodge.html"><span class="dm-icon">🚗</span> Dodge / Chrysler / Jeep</a>
+          <a href="chevy.html"><span class="dm-icon">🚗</span> Chevrolet / GMC</a>
+          <a href="hyundai.html"><span class="dm-icon">🚗</span> Hyundai / Kia</a>
+        </div>
+      </div>
+      <a href="about.html">
+        About
+      </a>
+      <a href="contact.html">
+        Contact Us
+      </a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">
+        Reviews
+      </a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5127885155" class="nav-phone">📞 (XXX) XXX-XXXX</a>
+      <a href="tel:5127885155" class="btn btn-accent">
+        Call Now
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileIfBg(event)">
+  <div class="mobile-panel">
+    <button class="close-btn" onclick="toggleMobile()">✕</button>
+    <br>
+    <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+    <div class="mob-nav-item" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+      🔧 Services ▾
+    </div>
+    <div style="display:none">
+      <a class="mob-sub" href="honda.html" onclick="toggleMobile()">Honda / Acura</a>
+      <a class="mob-sub" href="toyota.html" onclick="toggleMobile()">Toyota / Lexus</a>
+      <a class="mob-sub" href="nissan.html" onclick="toggleMobile()">Nissan / Infiniti</a>
+      <a class="mob-sub" href="ford.html" onclick="toggleMobile()">Ford / Lincoln</a>
+      <a class="mob-sub" href="dodge.html" onclick="toggleMobile()">Dodge / Chrysler / Jeep</a>
+      <a class="mob-sub" href="chevy.html" onclick="toggleMobile()">Chevrolet / GMC</a>
+      <a class="mob-sub" href="hyundai.html" onclick="toggleMobile()">Hyundai / Kia</a>
+    </div>
+    <a href="about.html" onclick="toggleMobile()">ℹ️ About</a>
+    <a href="contact.html" onclick="toggleMobile()">📞 Contact Us</a>
+    <a href="faq.html" onclick="toggleMobile()">❓ FAQ</a>
+    <a href="reviews.html" onclick="toggleMobile()">⭐ Reviews</a>
+    <br>
+    <a href="tel:5127885155" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:10px;">📞 (XXX) XXX-XXXX</a>
+  </div>
+</div>
+
+<!-- FLOATING PHONE -->
+<div class="float-phone">
+  <a href="tel:5127885155">
+    <span>📞 (XXX) XXX-XXXX</span>
+  </a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Toyota Key Not Working? Car Key Locksmith in Macon</h1>
+      <p>If your Toyota won't start, key isn't working, or you lost your only key — this is something we deal with all the time around Macon.</p>
+      <p>Sometimes everything works fine…</p>
+      <p>and then suddenly it doesn't.</p>
+      <p>🚗 And that's usually when you realize you don't have a spare.</p>
+      <div class="hero-cta">
+        <a href="tel:5127885155" class="btn btn-primary btn-large">📞 Call Now: (XXX) XXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="content-wrapper">
+      <h2>What Usually Happens</h2>
+      <p>Toyota vehicles don't all use the same system.</p>
+      <p>Some use standard keys.</p>
+      <p>Some have chips.</p>
+      <p>Some are push-to-start.</p>
+      <p>From the outside, it all looks the same — but fixing it depends on the system.</p>
+      
+      <h2>A Real Situation Around Macon</h2>
+      <p>Customer near The Shoppes at River Crossing lost their only Toyota key.</p>
+      <p>They thought they needed to tow the car.</p>
+      <p>🚗 They didn't.</p>
+      <p>We came out, made a new key, programmed it, and got them back on the road the same visit.</p>
+      
+      <h2>Another One</h2>
+      <p>Customer turned the key — car wouldn't start.</p>
+      <p>They thought something was wrong with the car itself.</p>
+      <p>🚗 It wasn't.</p>
+      <p>The issue was with the key system.</p>
+      <p>Once we checked it properly, the fix was simple.</p>
+      
+      <h2>When It Gets More Complicated</h2>
+      <p>Some older Toyota models (especially early 2000s) can lock the system when all keys are lost.</p>
+      <p>🚗 That's where experience matters.</p>
+      <p>Instead of replacing expensive parts, there are ways to reset the system and bring it back.</p>
+      <p>🚗 That can save a lot of money.</p>
+      
+      <h2>A Small Tip That Helps</h2>
+      <p>If your key is damaged or broken:</p>
+      <ul>
+        <li>🚗 Keep it — don't throw it away</li>
+      </ul>
+      <p>Even a damaged key can help us:</p>
+      <ul>
+        <li>• Match cuts</li>
+        <li>• Build a new key faster</li>
+        <li>• Save you time and cost</li>
+      </ul>
+      
+      <h2>What We Do</h2>
+      <p>At Macon Car Key Locksmith, we come out, take a look, and figure out what's actually going on.</p>
+      <p>Then we fix the real problem.</p>
+      <p>Not guessing.</p>
+      <p>Not replacing parts that don't need to be replaced.</p>
+      
+      <h2>Toyota Key Help</h2>
+      <ul>
+        <li>• Lost Toyota keys</li>
+        <li>• Spare keys</li>
+        <li>• Key not starting car</li>
+        <li>• Chip key issues</li>
+        <li>• Lockouts</li>
+      </ul>
+      <p>Everything is done on-site.</p>
+      
+      <h2>🚗 Driving a Lexus?</h2>
+      <p>Lexus is very similar to Toyota — but usually more advanced.</p>
+      <p>Most Lexus vehicles use smart keys and push-to-start systems.</p>
+      
+      <h2>Lexus Key Issues We See</h2>
+      <p>Instead of a key not turning, you might notice:</p>
+      <ul>
+        <li>• "Key not detected"</li>
+        <li>• Car not starting</li>
+        <li>• Push button not responding</li>
+      </ul>
+      <p>A lot of the time, it's:</p>
+      <ul>
+        <li>• Key battery</li>
+        <li>• Signal issue</li>
+        <li>• Or programming</li>
+      </ul>
+      <p>🚗 Not always something serious.</p>
+      
+      <h2>A Real Lexus Situation</h2>
+      <p>Customer near Mercer University had a Lexus that wouldn't start.</p>
+      <p>They thought something major failed.</p>
+      <p>🚗 It was just a weak key battery.</p>
+      <p>Simple fix — big stress.</p>
+      
+      <h2>A Quick Tip</h2>
+      <p>If your Lexus won't start:</p>
+      <ul>
+        <li>🚗 Hold the key close to the push-to-start button</li>
+      </ul>
+      <p>In many cases, it will start right away.</p>
+      
+      <h2>Lexus Service Around Macon</h2>
+      <p>We help with:</p>
+      <ul>
+        <li>• Lost Lexus keys</li>
+        <li>• Smart key programming</li>
+        <li>• Spare keys</li>
+        <li>• Push-to-start issues</li>
+        <li>• Lockouts</li>
+      </ul>
+      <p>All done on-site.</p>
+      
+      <h2>🎉 Special Offers</h2>
+      <ul>
+        <li>• 🗝️ 50% OFF 2nd Car Key</li>
+        <li>• 🔑 $20 OFF Car Key Replacement</li>
+        <li>• 🔧 $25 OFF Ignition Repair</li>
+      </ul>
+      
+      <h2>⭐ What Customers Say</h2>
+      <blockquote>"Made a key on the spot after I lost mine. Super easy."</blockquote>
+      <blockquote>"Didn't try to replace anything I didn't need."</blockquote>
+      <blockquote>"Quick and honest service."</blockquote>
+      
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Can you make a Toyota key if I lost the only one?</strong><br>
+      Yes, in most cases.</p>
+      
+      <p><strong>Do I need to replace the system if all keys are lost?</strong><br>
+      Not always.</p>
+      
+      <p><strong>Can you program smart keys on-site?</strong><br>
+      Yes.</p>
+      
+      <p><strong>What happens if I ignore the problem?</strong><br>
+      It usually gets worse and can leave you stuck.</p>
+      
+      <h2>Final Call</h2>
+      <p>If your Toyota or Lexus key is not working, don't wait.</p>
+      <p>Call Macon Car Key Locksmith and we'll come out and take a look.</p>
+      
+      <div class="cta-banner">
+        <a href="tel:5127885155" class="btn btn-primary btn-large">📞 (XXX) XXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Macon Car Key Locksmith</h3>
+        <p>Professional mobile car key and ignition service in Macon, GA</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="honda.html">Honda / Acura</a></li>
+          <li><a href="toyota.html">Toyota / Lexus</a></li>
+          <li><a href="nissan.html">Nissan / Infiniti</a></li>
+          <li><a href="ford.html">Ford / Lincoln</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>📞 (XXX) XXX-XXXX</p>
+        <p>📍 Serving Macon, GA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Macon Car Key Locksmith. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

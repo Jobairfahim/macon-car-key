@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Customer Reviews - Austin Car Key & Ignition - What our Austin customers are saying">
+<title>Reviews - Austin Car Key & Ignition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 60px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">
+        Home
+      </a>
+      <div class="dropdown">
+        <div class="nav-item">
+          Services
+          ▾
+        </div>
+        <div class="dropdown-menu">
+          <a href="brands.html#honda"><span class="dm-icon">🚗</span> Honda / Acura</a>
+          <a href="brands.html#toyota"><span class="dm-icon">🚗</span> Toyota / Lexus</a>
+          <a href="brands.html#nissan"><span class="dm-icon">🚗</span> Nissan / Infiniti</a>
+          <a href="brands.html#ford"><span class="dm-icon">🚗</span> Ford / Lincoln</a>
+          <a href="brands.html#dodge"><span class="dm-icon">🚗</span> Dodge / Chrysler / Jeep</a>
+          <a href="brands.html#chevy"><span class="dm-icon">🚗</span> Chevrolet / GMC</a>
+          <a href="brands.html#hyundai"><span class="dm-icon">🚗</span> Hyundai / Kia</a>
+        </div>
+      </div>
+      <a href="about.html">
+        About
+      </a>
+      <a href="contact.html">
+        Contact Us
+      </a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html" class="active">
+        Reviews
+      </a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5127885155" class="nav-phone">📞 (512) 788-5155</a>
+      <a href="tel:5127885155" class="btn btn-accent">
+        Call Now
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileIfBg(event)">
+  <div class="mobile-panel">
+    <button class="close-btn" onclick="toggleMobile()">✕</button>
+    <br>
+    <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+    <div class="mob-nav-item" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+      🔧 Services ▾
+    </div>
+    <div style="display:none">
+      <a class="mob-sub" href="brands.html#honda" onclick="toggleMobile()">Honda / Acura</a>
+      <a class="mob-sub" href="brands.html#toyota" onclick="toggleMobile()">Toyota / Lexus</a>
+      <a class="mob-sub" href="brands.html#nissan" onclick="toggleMobile()">Nissan / Infiniti</a>
+      <a class="mob-sub" href="brands.html#ford" onclick="toggleMobile()">Ford / Lincoln</a>
+      <a class="mob-sub" href="brands.html#dodge" onclick="toggleMobile()">Dodge / Chrysler / Jeep</a>
+      <a class="mob-sub" href="brands.html#chevy" onclick="toggleMobile()">Chevrolet / GMC</a>
+      <a class="mob-sub" href="brands.html#hyundai" onclick="toggleMobile()">Hyundai / Kia</a>
+    </div>
+    <a href="about.html" onclick="toggleMobile()">ℹ️ About</a>
+    <a href="contact.html" onclick="toggleMobile()">📞 Contact Us</a>
+    <a href="faq.html" onclick="toggleMobile()">❓ FAQ</a>
+    <a href="reviews.html" onclick="toggleMobile()">⭐ Reviews</a>
+    <br>
+    <a href="tel:5127885155" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:10px;">📞 (512) 788-5155</a>
+  </div>
+</div>
+
+<main>
+  <section style="background:var(--primary);padding:48px 0 32px;">
+    <div class="container">
+      <h1 style="color:#fff;">Customer Reviews</h1>
+      <p style="color:rgba(255,255,255,0.8);margin-top:8px;">What our customers in Austin say.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:40px;">
+        <div style="font-size:3rem;margin-bottom:8px;">⭐⭐⭐⭐⭐</div>
+        <div style="font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--primary);">5.0 / 5.0</div>
+        <p style="color:var(--text-light);margin-top:4px;">Based on verified customer reviews</p>
+      </div>
+      <div class="grid-3">
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"Lost my Honda keys at The Domain and they helped me in less than 30 minutes. Made a new key on the spot without needing a tow truck. Incredible service."</p>
+          <div class="reviewer">Maria G.</div>
+          <div class="reviewer-sub">The Domain, Austin</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"My Toyota ignition was blocked. Elsewhere I was told I needed to replace the computer. Austin Car Key repaired it without overspending. Very professional."</p>
+          <div class="reviewer">Carlos M.</div>
+          <div class="reviewer-sub">South Austin</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"My Nissan said 'key not detected'. I thought it was serious. It was the key battery. They showed me the start button tip. They arrived quickly and were very honest."</p>
+          <div class="reviewer">Jennifer R.</div>
+          <div class="reviewer-sub">Round Rock</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"I had a broken key inside my F-150 ignition. They said they could do it on the spot and they did. No tow truck, no dealership. Excellent service."</p>
+          <div class="reviewer">Robert T.</div>
+          <div class="reviewer-sub">North Austin</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"Lost the only key to my Hyundai with the car running. They helped me make a new one before turning off the car. Didn't wait more than 35 minutes. Thanks!"</p>
+          <div class="reviewer">Ana P.</div>
+          <div class="reviewer-sub">Austin</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"My Jeep wouldn't start. I thought it was the car. It was the keys. They explained the problem, fixed it on the spot and showed me how to avoid it. Highly recommended."</p>
+          <div class="reviewer">David L.</div>
+          <div class="reviewer-sub">Georgetown</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"Had a GMC Sierra with a stuck ignition. The dealership said it would cost hundreds. Austin Car Key repaired it for much less. Very satisfied."</p>
+          <div class="reviewer">Michael S.</div>
+          <div class="reviewer-sub">Cedar Park</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"They arrived exactly when they said. My Kia had a failing push-to-start. They diagnosed, repaired and left in less than 45 minutes. Professional and fast."</p>
+          <div class="reviewer">Lisa K.</div>
+          <div class="reviewer-sub">Pflugerville</div>
+        </div>
+        <div class="review-card">
+          <div class="review-stars">⭐⭐⭐⭐⭐</div>
+          <p class="review-text ">"Honest and fast service. They told me exactly what the problem was and how much it would cost before starting. No surprises. My Honda Acura works perfectly."</p>
+          <div class="reviewer">Sophia W.</div>
+          <div class="reviewer-sub">West Austin</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px;">
+        <div class="cta-banner">
+          <h2>Need Help?</h2>
+          <p>Join hundreds of satisfied customers in Austin. Call us now.</p>
+          <a href="tel:5127885155" class="btn" style="background:#fff;color:var(--accent);font-size:17px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FLOATING PHONE -->
+<div class="float-phone">
+  <a href="tel:5127885155">📞 (512) 788-5155</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 50px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+        </div>
+        <p style="font-size:14px;line-height:1.7;">Mobile car key service and ignition repair in Austin, TX. No tow truck. No dealership.</p>
+        <p style="margin-top:12px;font-size:14px;">📍 1803 W 35th St STE D, Austin, TX 78703</p>
+        <p style="margin-top:4px;font-size:14px;">📞 <a href="tel:5127885155">(512) 788-5155</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul style="list-style:none;line-height:2.2;">
+          <li><a href="brands.html#honda" style="cursor:pointer;">Honda / Acura</a></li>
+          <li><a href="brands.html#toyota" style="cursor:pointer;">Toyota / Lexus</a></li>
+          <li><a href="brands.html#nissan" style="cursor:pointer;">Nissan / Infiniti</a></li>
+          <li><a href="brands.html#ford" style="cursor:pointer;">Ford / Lincoln</a></li>
+          <li><a href="brands.html#dodge" style="cursor:pointer;">Dodge / Chrysler / Jeep</a></li>
+          <li><a href="brands.html#chevy" style="cursor:pointer;">Chevrolet / GMC</a></li>
+          <li><a href="brands.html#hyundai" style="cursor:pointer;">Hyundai / Kia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul style="list-style:none;line-height:2.4;">
+          <li><a href="index.html" style="cursor:pointer;">Home</a></li>
+          <li><a href="about.html" style="cursor:pointer;">About</a></li>
+          <li><a href="contact.html" style="cursor:pointer;">Contact Us</a></li>
+          <li><a href="faq.html" style="cursor:pointer;">FAQ</a></li>
+          <li><a href="reviews.html" style="cursor:pointer;">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul style="list-style:none;line-height:2.2;font-size:14px;">
+          <li>📍 Austin</li>
+          <li>📍 North / South / East / West Austin</li>
+          <li>📍 Round Rock</li>
+          <li>📍 Cedar Park</li>
+          <li>📍 Pflugerville</li>
+          <li>📍 Georgetown</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Austin Car Key & Ignition. All rights reserved.</span>
+      <a href="http://austincarkeyandignition.com/">austincarkeyandignition.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

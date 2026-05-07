@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Austin Car Key & Ignition - Specialized car key and ignition repair service by brand in Austin, TX">
+<title>Services by Brand - Austin Car Key & Ignition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 60px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">
+        Home
+      </a>
+      <div class="dropdown">
+        <div class="nav-item">
+          Services
+          ▾
+        </div>
+        <div class="dropdown-menu">
+          <a href="#honda"><span class="dm-icon">🚗</span> Honda / Acura</a>
+          <a href="#toyota"><span class="dm-icon">🚗</span> Toyota / Lexus</a>
+          <a href="#nissan"><span class="dm-icon">🚗</span> Nissan / Infiniti</a>
+          <a href="#ford"><span class="dm-icon">🚗</span> Ford / Lincoln</a>
+          <a href="#dodge"><span class="dm-icon">🚗</span> Dodge / Chrysler / Jeep</a>
+          <a href="#chevy"><span class="dm-icon">🚗</span> Chevrolet / GMC</a>
+          <a href="#hyundai"><span class="dm-icon">🚗</span> Hyundai / Kia</a>
+        </div>
+      </div>
+      <a href="about.html">
+        About
+      </a>
+      <a href="contact.html">
+        Contact Us
+      </a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">
+        Reviews
+      </a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5127885155" class="nav-phone">📞 (512) 788-5155</a>
+      <a href="tel:5127885155" class="btn btn-accent">
+        Call Now
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileIfBg(event)">
+  <div class="mobile-panel">
+    <button class="close-btn" onclick="toggleMobile()">✕</button>
+    <br>
+    <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+    <div class="mob-nav-item" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+      🔧 Services ▾
+    </div>
+    <div style="display:none">
+      <a class="mob-sub" href="#honda" onclick="toggleMobile()">Honda / Acura</a>
+      <a class="mob-sub" href="#toyota" onclick="toggleMobile()">Toyota / Lexus</a>
+      <a class="mob-sub" href="#nissan" onclick="toggleMobile()">Nissan / Infiniti</a>
+      <a class="mob-sub" href="#ford" onclick="toggleMobile()">Ford / Lincoln</a>
+      <a class="mob-sub" href="#dodge" onclick="toggleMobile()">Dodge / Chrysler / Jeep</a>
+      <a class="mob-sub" href="#chevy" onclick="toggleMobile()">Chevrolet / GMC</a>
+      <a class="mob-sub" href="#hyundai" onclick="toggleMobile()">Hyundai / Kia</a>
+    </div>
+    <a href="about.html" onclick="toggleMobile()">ℹ️ About</a>
+    <a href="contact.html" onclick="toggleMobile()">📞 Contact Us</a>
+    <a href="faq.html" onclick="toggleMobile()">❓ FAQ</a>
+    <a href="reviews.html" onclick="toggleMobile()">⭐ Reviews</a>
+    <br>
+    <a href="tel:5127885155" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:10px;">📞 (512) 788-5155</a>
+  </div>
+</div>
+
+<main>
+  <section style="background:var(--primary);padding:48px 0 32px;">
+    <div class="container">
+      <div class="badge badge-accent" style="margin-bottom:12px;">Services by Brand</div>
+      <h1 style="color:#fff;font-size:clamp(1.6rem,3vw,2.4rem);">Specialized Service by Brand</h1>
+      <p style="color:rgba(255,255,255,0.8);margin-top:8px;">Select your brand to see common issues, tips and specific services.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <div class="brand-tabs">
+        <button class="brand-tab active" id="tab-honda" onclick="setBrandTab('honda')">Honda / Acura</button>
+        <button class="brand-tab" id="tab-toyota" onclick="setBrandTab('toyota')">Toyota / Lexus</button>
+        <button class="brand-tab" id="tab-nissan" onclick="setBrandTab('nissan')">Nissan / Infiniti</button>
+        <button class="brand-tab" id="tab-ford" onclick="setBrandTab('ford')">Ford / Lincoln</button>
+        <button class="brand-tab" id="tab-dodge" onclick="setBrandTab('dodge')">Dodge / Chrysler / Jeep</button>
+        <button class="brand-tab" id="tab-chevy" onclick="setBrandTab('chevy')">Chevrolet / GMC</button>
+        <button class="brand-tab" id="tab-hyundai" onclick="setBrandTab('hyundai')">Hyundai / Kia</button>
+      </div>
+
+      <!-- HONDA -->
+      <div class="brand-content active" id="brand-honda">
+        <div class="brand-hero">
+          <h2 id="honda">🚗 Honda / Acura</h2>
+          <p class="">Mobile Honda and Acura key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="warning-box" style="margin-bottom:16px;">
+              <div class="wb-icon">⚠️</div>
+              <div>
+                <strong>Before It Gets Worse</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  If your key is starting to feel stiff or hard to turn — don't ignore it. This is a clear sign of wear.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">Where Does the Problem Start?</h3>
+              <ul class="step-list">
+                <li><div class="step-num">1</div>Key wears down over time</li>
+                <li><div class="step-num">2</div>Loses its proper shape</li>
+                <li><div class="step-num">3</div>No longer matches the ignition</li>
+                <li><div class="step-num">4</div>Uneven internal pressure</li>
+                <li><div class="step-num">5</div>Ignition fails completely</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">Warning Signs</h3>
+              <ul class="check-list">
+                <li>Key feels stiff</li>
+                <li>You have to wiggle it to work</li>
+                <li>Sometimes starts, sometimes doesn't</li>
+                <li>Feels different than before</li>
+              </ul>
+            </div>
+            <div class="info-box">
+              <div style="font-size:20px;">🔧</div>
+              <div>
+                <strong>Smart Solution – Save Money</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  Instead of replacing the whole key: we change the shell, cut a new blade and transfer the electronics.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div class="card">
+            <h3 style="margin-bottom:12px;font-size:17px;">🚗 Honda Services</h3>
+            <ul class="check-list">
+              <li>Lost Honda key replacement</li>
+              <li>Key copies</li>
+              <li>Chip programming</li>
+              <li>Ignition repair</li>
+              <li>Broken key extraction</li>
+              <li>Lockout (car opening)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom:12px;font-size:17px;">🚘 Acura Services</h3>
+            <ul class="check-list">
+              <li>Smart key programming</li>
+              <li>Lost key replacement</li>
+              <li>Key copies</li>
+              <li>Remote repair</li>
+              <li>Lockout</li>
+            </ul>
+            <div class="tip-box" style="margin-top:14px;">
+              <div style="font-size:18px;">⚡</div>
+              <div style="font-size:14px;">
+                <strong>Quick Acura Tip:</strong>
+                 Bring the key close to the start button — the system can detect it even with a low battery.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2">
+          <div class="case-card">
+            <div class="loc">📍 Real Experience</div>
+            <p class="">Honda Civic — key wouldn't turn. Took almost 4 hours initially. An internal piece was blocking the key. Today, the same job takes 20–30 minutes.</p>
+            <p class="result ">✅ Experience makes all the difference.</p>
+          </div>
+          <div class="case-card">
+            <div class="loc">📍 Austin</div>
+            <p class="">Customer with Honda — key worked only sometimes. The ignition was about to fail completely.</p>
+            <p class="result ">✅ We repaired on the spot and prevented the car from getting stranded.</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155 — Call Now</a>
+        </div>
+      </div>
+
+      <!-- TOYOTA -->
+      <div class="brand-content" id="brand-toyota">
+        <div class="brand-hero">
+          <h2 id="toyota">🚗 Toyota / Lexus</h2>
+          <p class="">Mobile Toyota and Lexus key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">Toyota Key Systems</h3>
+              <ul class="step-list">
+                <li><div class="step-num">1</div>Older models → simple keys</li>
+                <li><div class="step-num">2</div>Mid models → chip keys</li>
+                <li><div class="step-num">3</div>New models → smart key / push-to-start</li>
+              </ul>
+              <p style="font-size:13px;color:var(--text-light);margin-top:10px;">
+                Each system requires a different process. Using the wrong method can cost more money.
+              </p>
+            </div>
+            <div class="warning-box">
+              <div class="wb-icon">⚠️</div>
+              <div>
+                <strong>Important Case – "All Keys Lost" Toyota</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  In some Toyotas (90s–2000s) the system can block new keys. Many say: "Need to replace ECU". We can reset and reprogram.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">Immobilizer Signs</h3>
+              <ul class="check-list">
+                <li>Engine cranks but won't start</li>
+                <li>Security light blinking</li>
+                <li>Key not accepted</li>
+                <li>Smart key not detected</li>
+              </ul>
+            </div>
+            <div class="tip-box">
+              <div style="font-size:20px;">⚡</div>
+              <div>
+                <strong>Tip Lexus: </strong>
+                If your Lexus won't start, bring the key close to the start button. The system can detect it even with low battery.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div class="card">
+            <h3 style="margin-bottom:12px;font-size:17px;">🚗 Toyota Services</h3>
+            <ul class="check-list">
+              <li>Lost key replacement</li>
+              <li>Key copies</li>
+              <li>Chip key programming</li>
+              <li>Smart key programming</li>
+              <li>ECU reset / reprogramming</li>
+              <li>Ignition repair</li>
+              <li>Broken key extraction</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3 style="margin-bottom:12px;font-size:17px;">🚘 Lexus Services</h3>
+            <ul class="check-list">
+              <li>Smart key programming</li>
+              <li>Lost key replacement</li>
+              <li>Key copies</li>
+              <li>Remote repair</li>
+              <li>Lockout</li>
+            </ul>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 South Austin</div><p class="">Customer lost the only Toyota key.</p><p class="result ">✅ New key programmed on the spot (~30 min)</p></div>
+          <div class="case-card"><div class="loc">📍 North Austin</div><p class="">Toyota with no key at all.</p><p class="result ">✅ We decoded the lock and created a key from scratch.</p></div>
+          <div class="case-card"><div class="loc">📍 Round Rock</div><p class="">Smart key not detected. It wasn't the car — it was the key.</p><p class="result ">✅ Solved without unnecessary replacements.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+
+      <!-- NISSAN -->
+      <div class="brand-content" id="brand-nissan">
+        <div class="brand-hero">
+          <h2 id="nissan">🚗 Nissan / Infiniti</h2>
+          <p class="">Mobile Nissan and Infiniti key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="info-box" style="margin-bottom:16px;">
+              <div style="font-size:20px;">💡</div>
+              <div>
+                <strong>Start Simple</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  Before thinking it's serious: change the key battery and try to start again.
+                </p>
+              </div>
+            </div>
+            <div class="tip-box" style="margin-bottom:16px;">
+              <div style="font-size:20px;">⚡</div>
+              <div>
+                <strong>What Many People Don't Know:</strong>
+                <p style="font-size:14px;margin-top:4px;">
+                  Even with a dead battery — bring the key directly to the start button. The car can detect it via internal antenna.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">How the System Works</h3>
+              <p style="font-size:14px;color:var(--text-light);">
+                Nissans use smart key systems. The car needs to detect the key's signal. If there's a problem — that does NOT always mean something is broken.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">Common Problems</h3>
+              <ul class="check-list">
+                <li>"Key not detected"</li>
+                <li>Push-to-start not working</li>
+                <li>Weak key battery</li>
+                <li>Lost key</li>
+                <li>Remote not responding</li>
+                <li>Intermittent problems</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚘 Nissan / Infiniti Services</h3>
+              <ul class="check-list">
+                <li>Smart key programming</li>
+                <li>Lost key replacement</li>
+                <li>Key copies</li>
+                <li>Push-to-start diagnostic</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 Round Rock</div><p class="">Customer thought the car battery was dead. It was the key battery.</p><p class="result ">✅ Brought the key to the button — started instantly.</p></div>
+          <div class="case-card"><div class="loc">📍 Austin Gas Station</div><p class="">Customer lost the only key.</p><p class="result ">✅ Created and programmed new key in ~30 min.</p></div>
+          <div class="case-card"><div class="loc">📍 South Austin</div><p class="">Push-to-start failing sometimes. Signal problem.</p><p class="result ">✅ Solved in the same visit.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+
+      <!-- FORD -->
+      <div class="brand-content" id="brand-ford">
+        <div class="brand-hero">
+          <h2 id="ford">🚗 Ford / Lincoln</h2>
+          <p class="">Mobile Ford and Lincoln key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="warning-box" style="margin-bottom:16px;">
+              <div class="wb-icon">⚠️</div>
+              <div>
+                <strong>Before It Locks Completely</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  If your key is stiff or hard to turn — don't ignore it. It's a clear sign of ignition wear.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">Why Ford Ignitions Fail</h3>
+              <ul class="step-list">
+                <li><div class="step-num">1</div>Ignition wears internally</li>
+                <li><div class="step-num">2</div>Key weakens with use</li>
+                <li><div class="step-num">3</div>Alignment changes</li>
+                <li><div class="step-num">4</div>Key becomes stiff</li>
+                <li><div class="step-num">5</div>Eventually stops turning</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;" style="background:#fff5f5;border:1px solid #fcc;">
+              <h3 style="margin-bottom:12px;font-size:17px;">❗ Very Common Mistake</h3>
+              <p style="font-size:14px;color:var(--text-light);margin-bottom:10px;">
+                When the ignition jams, many people force the key, try to drill, or fix it without experience.
+              </p>
+              <div style="background:#fff0f0;border-radius:8px;padding:12px;">
+                <p style="font-size:13px;color:#c0392b;font-weight:600;">
+                  ⚠️ This can cause total damage and need for complete replacement. Don't force it.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚗 Ford / Lincoln Services</h3>
+              <ul class="check-list">
+                <li>Ford ignition repair</li>
+                <li>Lost key replacement</li>
+                <li>Key copies</li>
+                <li>Chip key programming</li>
+                <li>Broken key extraction</li>
+                <li>Lincoln smart key</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 Austin</div><p class="">Ford Focus — key wouldn't turn.</p><p class="result ">✅ Ignition repair on the spot.</p></div>
+          <div class="case-card"><div class="loc">📍 North Austin</div><p class="">F-150 with broken key inside.</p><p class="result ">✅ Extracted the piece, repaired and made new key.</p></div>
+          <div class="case-card"><div class="loc">📍 South Austin</div><p class="">Key worked sometimes — was already damaging the ignition.</p><p class="result ">✅ Solved before it failed completely.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+
+      <!-- DODGE -->
+      <div class="brand-content" id="brand-dodge">
+        <div class="brand-hero">
+          <h2 id="dodge">🚗 Dodge / Chrysler / Jeep</h2>
+          <p class="">Mobile Dodge, Chrysler and Jeep key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="warning-box" style="margin-bottom:16px;">
+              <div class="wb-icon">⚠️</div>
+              <div>
+                <strong>Before It Gets Worse</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  If your key is stiff or gets stuck — don't ignore it. This is usually ignition wear.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">Common Problems</h3>
+              <ul class="check-list">
+                <li>Key stuck in ignition</li>
+                <li>Ignition that won't turn</li>
+                <li>Push-to-start not responding</li>
+                <li>"Key not detected"</li>
+                <li>Lost keys</li>
+                <li>Remote not working</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚗 Dodge / Chrysler Services</h3>
+              <ul class="check-list">
+                <li>Lost key replacement</li>
+                <li>Smart key programming</li>
+                <li>Ignition repair</li>
+                <li>Broken key extraction</li>
+                <li>Key copies</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚘 Jeep Services</h3>
+              <ul class="check-list">
+                <li>Jeep key replacement</li>
+                <li>Smart key programming</li>
+                <li>Ignition repair</li>
+                <li>Key copies</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 Austin</div><p class="">Dodge Ram — key stuck in ignition.</p><p class="result ">✅ Extraction and repair on the spot.</p></div>
+          <div class="case-card"><div class="loc">📍 Round Rock</div><p class="">Jeep Cherokee — push-to-start not working.</p><p class="result ">✅ Diagnosis and solution in ~35 min.</p></div>
+          <div class="case-card"><div class="loc">📍 North Austin</div><p class="">Chrysler 300 — lost key.</p><p class="result ">✅ New key programmed on the spot.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+
+      <!-- CHEVY -->
+      <div class="brand-content" id="brand-chevy">
+        <div class="brand-hero">
+          <h2 id="chevy">🚗 Chevrolet / GMC</h2>
+          <p class="">Mobile Chevrolet and GMC key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="info-box" style="margin-bottom:16px;">
+              <div style="font-size:20px;">💡</div>
+              <div>
+                <strong>GM Systems</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  Chevrolet and GMC use similar systems. Many models have PASS-Key or VATS immobilizer.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">Common Problems</h3>
+              <ul class="check-list">
+                <li>Key not turning</li>
+                <li>Ignition stuck</li>
+                <li>Lost key</li>
+                <li>Immobilizer problems</li>
+                <li>Smart key not detected</li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚗 Chevrolet Services</h3>
+              <ul class="check-list">
+                <li>Lost key replacement</li>
+                <li>Ignition repair</li>
+                <li>Chip programming</li>
+                <li>Key copies</li>
+                <li>Broken key extraction</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚘 GMC Services</h3>
+              <ul class="check-list">
+                <li>Lost key replacement</li>
+                <li>Ignition repair</li>
+                <li>Smart key programming</li>
+                <li>Key copies</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 Austin</div><p class="">Silverado — key wouldn't turn.</p><p class="result ">✅ Ignition repair on the spot.</p></div>
+          <div class="case-card"><div class="loc">📍 Round Rock</div><p class="">GMC Sierra — lost key.</p><p class="result ">✅ New key programmed in ~30 min.</p></div>
+          <div class="case-card"><div class="loc">📍 South Austin</div><p class="">Chevy Malibu — immobilizer problems.</p><p class="result ">✅ Diagnosis and solution without replacements.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+
+      <!-- HYUNDAI -->
+      <div class="brand-content" id="brand-hyundai">
+        <div class="brand-hero">
+          <h2 id="hyundai">🚗 Hyundai / Kia</h2>
+          <p class="">Mobile Hyundai and Kia key service in Austin, TX</p>
+        </div>
+        <div class="grid-2" style="margin-bottom:24px;">
+          <div>
+            <div class="warning-box" style="margin-bottom:16px;">
+              <div class="wb-icon">⚠️</div>
+              <div>
+                <strong>"Key Not Detected" — Not Always Serious</strong>
+                <p style="font-size:14px;color:var(--text-light);margin-top:4px;">
+                  This message appears often in Hyundai/Kia. Usually it's key battery or signal problem.
+                </p>
+              </div>
+            </div>
+            <div class="tip-box" style="margin-bottom:16px;">
+              <div style="font-size:20px;">⚡</div>
+              <div>
+                <strong>Emergency Tip:</strong>
+                <p style="font-size:14px;margin-top:4px;">
+                  If the car doesn't detect the key: bring it directly to the start button. The system can detect it via internal antenna.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">Modern Systems</h3>
+              <p style="font-size:14px;color:var(--text-light);">
+                Hyundai/Kia use advanced push-to-start systems. They're sensitive but repairable.
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:16px;">
+              <h3 style="margin-bottom:12px;font-size:17px;">Common Problems</h3>
+              <ul class="check-list">
+                <li>"Key not detected"</li>
+                <li>Push-to-start not working</li>
+                <li>Weak key battery</li>
+                <li>Lost key</li>
+                <li>Remote not responding</li>
+                <li>Intermittent problems</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3 style="margin-bottom:12px;font-size:17px;">🚗 Hyundai / Kia Services</h3>
+              <ul class="check-list">
+                <li>Smart key programming</li>
+                <li>Lost key replacement</li>
+                <li>Key copies</li>
+                <li>Push-to-start diagnostic</li>
+                <li>Lockout</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="grid-3">
+          <div class="case-card"><div class="loc">📍 Austin</div><p class="">Hyundai Elantra — "key not detected".</p><p class="result ">✅ It was the battery — solved in 5 minutes.</p></div>
+          <div class="case-card"><div class="loc">📍 Round Rock</div><p class="">Kia Sportage — push-to-start failing.</p><p class="result ">✅ Diagnosis and repair on the spot.</p></div>
+          <div class="case-card"><div class="loc">📍 North Austin</div><p class="">Customer lost the only Hyundai key.</p><p class="result ">✅ New key programmed in ~35 min.</p></div>
+        </div>
+        <div style="text-align:center;margin-top:32px;">
+          <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FLOATING PHONE -->
+<div class="float-phone">
+  <a href="tel:5127885155">📞 (512) 788-5155</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 50px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+        </div>
+        <p style="font-size:14px;line-height:1.7;">Mobile car key service and ignition repair in Austin, TX. No tow truck. No dealership.</p>
+        <p style="margin-top:12px;font-size:14px;">📍 1803 W 35th St STE D, Austin, TX 78703</p>
+        <p style="margin-top:4px;font-size:14px;">📞 <a href="tel:5127885155">(512) 788-5155</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul style="list-style:none;line-height:2.2;">
+          <li><a href="#honda" style="cursor:pointer;">Honda / Acura</a></li>
+          <li><a href="#toyota" style="cursor:pointer;">Toyota / Lexus</a></li>
+          <li><a href="#nissan" style="cursor:pointer;">Nissan / Infiniti</a></li>
+          <li><a href="#ford" style="cursor:pointer;">Ford / Lincoln</a></li>
+          <li><a href="#dodge" style="cursor:pointer;">Dodge / Chrysler / Jeep</a></li>
+          <li><a href="#chevy" style="cursor:pointer;">Chevrolet / GMC</a></li>
+          <li><a href="#hyundai" style="cursor:pointer;">Hyundai / Kia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul style="list-style:none;line-height:2.4;">
+          <li><a href="index.html" style="cursor:pointer;">Home</a></li>
+          <li><a href="about.html" style="cursor:pointer;">About</a></li>
+          <li><a href="contact.html" style="cursor:pointer;">Contact Us</a></li>
+          <li><a href="faq.html" style="cursor:pointer;">FAQ</a></li>
+          <li><a href="reviews.html" style="cursor:pointer;">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul style="list-style:none;line-height:2.2;font-size:14px;">
+          <li>📍 Austin</li>
+          <li>📍 North / South / East / West Austin</li>
+          <li>📍 Round Rock</li>
+          <li>📍 Cedar Park</li>
+          <li>📍 Pflugerville</li>
+          <li>📍 Georgetown</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Austin Car Key & Ignition. All rights reserved.</span>
+      <a href="http://austincarkeyandignition.com/">austincarkeyandignition.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

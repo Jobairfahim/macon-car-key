@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Frequently Asked Questions - Austin Car Key & Ignition - Answers to common questions about car keys and ignition repair">
+<title>FAQ - Austin Car Key & Ignition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 60px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">
+        Home
+      </a>
+      <div class="dropdown">
+        <div class="nav-item">
+          Services
+          ▾
+        </div>
+        <div class="dropdown-menu">
+          <a href="brands.html#honda"><span class="dm-icon">🚗</span> Honda / Acura</a>
+          <a href="brands.html#toyota"><span class="dm-icon">🚗</span> Toyota / Lexus</a>
+          <a href="brands.html#nissan"><span class="dm-icon">🚗</span> Nissan / Infiniti</a>
+          <a href="brands.html#ford"><span class="dm-icon">🚗</span> Ford / Lincoln</a>
+          <a href="brands.html#dodge"><span class="dm-icon">🚗</span> Dodge / Chrysler / Jeep</a>
+          <a href="brands.html#chevy"><span class="dm-icon">🚗</span> Chevrolet / GMC</a>
+          <a href="brands.html#hyundai"><span class="dm-icon">🚗</span> Hyundai / Kia</a>
+        </div>
+      </div>
+      <a href="about.html">
+        About
+      </a>
+      <a href="contact.html">
+        Contact Us
+      </a>
+      <a href="faq.html" class="active">FAQ</a>
+      <a href="reviews.html">
+        Reviews
+      </a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5127885155" class="nav-phone">📞 (512) 788-5155</a>
+      <a href="tel:5127885155" class="btn btn-accent">
+        Call Now
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileIfBg(event)">
+  <div class="mobile-panel">
+    <button class="close-btn" onclick="toggleMobile()">✕</button>
+    <br>
+    <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+    <div class="mob-nav-item" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+      🔧 Services ▾
+    </div>
+    <div style="display:none">
+      <a class="mob-sub" href="brands.html#honda" onclick="toggleMobile()">Honda / Acura</a>
+      <a class="mob-sub" href="brands.html#toyota" onclick="toggleMobile()">Toyota / Lexus</a>
+      <a class="mob-sub" href="brands.html#nissan" onclick="toggleMobile()">Nissan / Infiniti</a>
+      <a class="mob-sub" href="brands.html#ford" onclick="toggleMobile()">Ford / Lincoln</a>
+      <a class="mob-sub" href="brands.html#dodge" onclick="toggleMobile()">Dodge / Chrysler / Jeep</a>
+      <a class="mob-sub" href="brands.html#chevy" onclick="toggleMobile()">Chevrolet / GMC</a>
+      <a class="mob-sub" href="brands.html#hyundai" onclick="toggleMobile()">Hyundai / Kia</a>
+    </div>
+    <a href="about.html" onclick="toggleMobile()">ℹ️ About</a>
+    <a href="contact.html" onclick="toggleMobile()">📞 Contact Us</a>
+    <a href="faq.html" onclick="toggleMobile()">❓ FAQ</a>
+    <a href="reviews.html" onclick="toggleMobile()">⭐ Reviews</a>
+    <br>
+    <a href="tel:5127885155" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:10px;">📞 (512) 788-5155</a>
+  </div>
+</div>
+
+<main>
+  <section style="background:var(--primary);padding:48px 0 32px;">
+    <div class="container">
+      <h1 style="color:#fff;">Frequently Asked Questions</h1>
+      <p style="color:rgba(255,255,255,0.8);margin-top:8px;">Answers to the most common questions.</p>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container" style="max-width:780px;">
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Do I need a tow truck for the service?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          No. Everything is done on the spot. We come to your location in Austin and solve the problem right there — at home, work, parking lot or gas station.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Can you make a key if I lost the only one?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          Yes. In many cases we can create and program a new key on the spot, even if no key is available. The process takes approximately 20–40 minutes.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Can you repair the ignition?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          In many cases yes. Many ignitions that seem to need replacement can be repaired. We diagnose first and solve the real problem without overspending.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          How long does it take to arrive?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          We normally arrive in 20–40 minutes depending on your location in the Austin area.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          What happens if I ignore the key or ignition problem?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          It generally gets worse. A small problem like a stiff key can end with the ignition completely blocked, leaving you stranded. It's better to address it before it fails completely.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Why does my Nissan/Hyundai/Kia say "Key not detected"?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          Generally it's due to a low key battery or signal problem. Try bringing the key directly to the start button. If it persists, call us.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Can I start the car if the key battery is dead?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          Yes — in many modern vehicles you can bring the key directly to the start button. The car can detect it via internal antenna even with a low battery.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Does the ECU always need to be replaced in Toyota?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          No — many times the system can be reset and new keys reprogrammed without replacing the computer. This can save you a lot of money.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Do you work with all car brands?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          Yes. We work with Honda/Acura, Toyota/Lexus, Nissan/Infiniti, Ford/Lincoln, Hyundai/Kia, Chevrolet/GMC and Dodge/Chrysler/Jeep, among others.
+        </div>
+      </div>
+      <div class="faq-item faq-open">
+        <div class="faq-q" onclick="toggleFaq(this)" style="cursor:default;">
+          Why won't my Honda/Ford key turn?
+          <span class="faq-arrow" style="transform:rotate(180deg);">▾</span>
+        </div>
+        <div class="faq-a" style="display:block !important;max-height:500px !important;opacity:1 !important;">
+          Generally due to key wear. Over time the key loses its shape and no longer matches the ignition correctly. In many cases it can be repaired without replacing the ignition.
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:36px;">
+        <p style="color:var(--text-light);margin-bottom:16px;">Have another question?</p>
+        <a href="tel:5127885155" class="btn btn-accent" style="font-size:16px;padding:16px 36px;">📞 (512) 788-5155</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FLOATING PHONE -->
+<div class="float-phone">
+  <a href="tel:5127885155">📞 (512) 788-5155</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:10px;margin-bottom:16px;">
+          <img src="assets/images/logo.webp" alt="Austin Car Key & Ignition" style="height: 50px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+        </div>
+        <p style="font-size:14px;line-height:1.7;">Mobile car key service and ignition repair in Austin, TX. No tow truck. No dealership.</p>
+        <p style="margin-top:12px;font-size:14px;">📍 1803 W 35th St STE D, Austin, TX 78703</p>
+        <p style="margin-top:4px;font-size:14px;">📞 <a href="tel:5127885155">(512) 788-5155</a></p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul style="list-style:none;line-height:2.2;">
+          <li><a href="brands.html#honda" style="cursor:pointer;">Honda / Acura</a></li>
+          <li><a href="brands.html#toyota" style="cursor:pointer;">Toyota / Lexus</a></li>
+          <li><a href="brands.html#nissan" style="cursor:pointer;">Nissan / Infiniti</a></li>
+          <li><a href="brands.html#ford" style="cursor:pointer;">Ford / Lincoln</a></li>
+          <li><a href="brands.html#dodge" style="cursor:pointer;">Dodge / Chrysler / Jeep</a></li>
+          <li><a href="brands.html#chevy" style="cursor:pointer;">Chevrolet / GMC</a></li>
+          <li><a href="brands.html#hyundai" style="cursor:pointer;">Hyundai / Kia</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Navigation</h4>
+        <ul style="list-style:none;line-height:2.4;">
+          <li><a href="index.html" style="cursor:pointer;">Home</a></li>
+          <li><a href="about.html" style="cursor:pointer;">About</a></li>
+          <li><a href="contact.html" style="cursor:pointer;">Contact Us</a></li>
+          <li><a href="faq.html" style="cursor:pointer;">FAQ</a></li>
+          <li><a href="reviews.html" style="cursor:pointer;">Reviews</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Service Areas</h4>
+        <ul style="list-style:none;line-height:2.2;font-size:14px;">
+          <li>📍 Austin</li>
+          <li>📍 North / South / East / West Austin</li>
+          <li>📍 Round Rock</li>
+          <li>📍 Cedar Park</li>
+          <li>📍 Pflugerville</li>
+          <li>📍 Georgetown</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 Austin Car Key & Ignition. All rights reserved.</span>
+      <a href="http://austincarkeyandignition.com/">austincarkeyandignition.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

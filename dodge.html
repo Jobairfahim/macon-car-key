@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Dodge, Jeep, and Chrysler key service in Macon, GA - Replacement, ignition repair and programming">
+<title>Dodge / Jeep / Chrysler - Macon Car Key Locksmith</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="assets/images/logo.ico">
+<link rel="stylesheet" href="styles.css">
+<style>
+/* Additional styles for Dodge page */
+.content-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.content-wrapper h2 {
+  color: var(--primary);
+  margin-top: 48px;
+  margin-bottom: 24px;
+  font-size: 2rem;
+}
+
+.content-wrapper h2:first-child {
+  margin-top: 0;
+}
+
+.content-wrapper ul {
+  margin: 20px 0;
+  padding-left: 24px;
+}
+
+.content-wrapper ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.content-wrapper blockquote {
+  border-left: 4px solid var(--accent);
+  padding-left: 20px;
+  margin: 24px 0;
+  font-style: italic;
+  color: var(--text-light);
+}
+
+.cta-banner {
+  text-align: center;
+  margin-top: 48px;
+  padding: 32px;
+  background: var(--bg2);
+  border-radius: var(--radius);
+  border: 2px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 0 16px;
+  }
+  
+  .content-wrapper h2 {
+    font-size: 1.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container nav-inner">
+    <a class="nav-logo" href="index.html">
+      <img src="assets/images/logo.webp" alt="Macon Car Key Locksmith" style="height: 60px; width: auto; background: white; padding: 10px; border-radius: 10px;">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">
+        Home
+      </a>
+      <div class="dropdown">
+        <div class="nav-item">
+          Services
+          ▾
+        </div>
+        <div class="dropdown-menu">
+          <a href="honda.html"><span class="dm-icon">🚗</span> Honda / Acura</a>
+          <a href="toyota.html"><span class="dm-icon">🚗</span> Toyota / Lexus</a>
+          <a href="nissan.html"><span class="dm-icon">🚗</span> Nissan / Infiniti</a>
+          <a href="ford.html"><span class="dm-icon">🚗</span> Ford / Lincoln</a>
+          <a href="dodge.html" class="active"><span class="dm-icon">🚗</span> Dodge / Chrysler / Jeep</a>
+          <a href="chevy.html"><span class="dm-icon">🚗</span> Chevrolet / GMC</a>
+          <a href="hyundai.html"><span class="dm-icon">🚗</span> Hyundai / Kia</a>
+        </div>
+      </div>
+      <a href="about.html">
+        About
+      </a>
+      <a href="contact.html">
+        Contact Us
+      </a>
+      <a href="faq.html">FAQ</a>
+      <a href="reviews.html">
+        Reviews
+      </a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:5127885155" class="nav-phone">📞 (XXX) XXX-XXXX</a>
+      <a href="tel:5127885155" class="btn btn-accent">
+        Call Now
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMobile()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu" onclick="closeMobileIfBg(event)">
+  <div class="mobile-panel">
+    <button class="close-btn" onclick="toggleMobile()">✕</button>
+    <br>
+    <a href="index.html" onclick="toggleMobile()">🏠 Home</a>
+    <div class="mob-nav-item" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='block'?'none':'block'">
+      🔧 Services ▾
+    </div>
+    <div style="display:none">
+      <a class="mob-sub" href="honda.html" onclick="toggleMobile()">Honda / Acura</a>
+      <a class="mob-sub" href="toyota.html" onclick="toggleMobile()">Toyota / Lexus</a>
+      <a class="mob-sub" href="nissan.html" onclick="toggleMobile()">Nissan / Infiniti</a>
+      <a class="mob-sub" href="ford.html" onclick="toggleMobile()">Ford / Lincoln</a>
+      <a class="mob-sub" href="dodge.html" onclick="toggleMobile()">Dodge / Chrysler / Jeep</a>
+      <a class="mob-sub" href="chevy.html" onclick="toggleMobile()">Chevrolet / GMC</a>
+      <a class="mob-sub" href="hyundai.html" onclick="toggleMobile()">Hyundai / Kia</a>
+    </div>
+    <a href="about.html" onclick="toggleMobile()">ℹ️ About</a>
+    <a href="contact.html" onclick="toggleMobile()">📞 Contact Us</a>
+    <a href="faq.html" onclick="toggleMobile()">❓ FAQ</a>
+    <a href="reviews.html" onclick="toggleMobile()">⭐ Reviews</a>
+    <br>
+    <a href="tel:5127885155" class="btn btn-accent" style="width:100%;justify-content:center;margin-top:10px;">📞 (XXX) XXX-XXXX</a>
+  </div>
+</div>
+
+<!-- FLOATING PHONE -->
+<div class="float-phone">
+  <a href="tel:5127885155">
+    <span>📞 (XXX) XXX-XXXX</span>
+  </a>
+</div>
+
+<main>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-content">
+      <h1>Dodge, Jeep, or Chrysler Not Starting? Car Key Locksmith in Macon</h1>
+      <p>If your Dodge, Jeep, or Chrysler won't start, key is stuck, or push button isn't responding — this is something we deal with all the time around Macon.</p>
+      <p>Sometimes it's the ignition.</p>
+      <p>Sometimes it's the key.</p>
+      <p>🚗 And sometimes… it's just bad luck.</p>
+      <div class="hero-cta">
+        <a href="tel:5127885155" class="btn btn-primary btn-large">📞 Call Now: (XXX) XXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="section">
+  <div class="container">
+    <div class="content-wrapper">
+      <h2>What Usually Happens</h2>
+      <p>These vehicles use a mix of systems:</p>
+      <ul>
+        <li>• Traditional ignitions</li>
+        <li>• Chip keys</li>
+        <li>• Push-to-start systems</li>
+      </ul>
+      <p>From the outside, it all looks the same — but the cause can be very different.</p>
+      
+      <h2>A Real Situation Around Macon</h2>
+      <p>We had a customer near Downtown Macon with a Dodge Charger.</p>
+      <p>We finished making him a key and even offered:</p>
+      <ul>
+        <li>🚗 50% OFF a second key</li>
+      </ul>
+      <p>He laughed and said: "I never lose keys."</p>
+      <p>🚗 Six hours later — he called again.</p>
+      <p>He lost his only key.</p>
+      
+      <h2>Why This Happens More Than People Think</h2>
+      <p>A lot of people don't think they need a spare.</p>
+      <p>Until:</p>
+      <ul>
+        <li>• The key is lost</li>
+        <li>• It breaks</li>
+        <li>• Or it stops working</li>
+      </ul>
+      <p>🚗 And then everything stops.</p>
+      
+      <h2>Ignition Problems (Very Common)</h2>
+      <p>In many Dodge and Chrysler vehicles:</p>
+      <ul>
+        <li>• The ignition wears over time</li>
+        <li>• The key can get stuck</li>
+        <li>• Turning becomes harder</li>
+      </ul>
+      <p>🚗 This usually builds up before it fails completely.</p>
+      
+      <h2>Jeep & Push-to-Start Issues</h2>
+      <p>Newer Jeep models use smart key systems.</p>
+      <p>Common problems:</p>
+      <ul>
+        <li>• "Key not detected"</li>
+        <li>• Push button not responding</li>
+        <li>• Weak key battery</li>
+        <li>• Signal issues</li>
+      </ul>
+      <p>🚗 A lot of the time, it's something simple once checked.</p>
+      
+      <h2>What We See Around Macon</h2>
+      <ul>
+        <li>• Keys lost during the day</li>
+        <li>• Cars not starting in parking lots</li>
+        <li>• Ignition getting stuck</li>
+        <li>• No spare key situations</li>
+      </ul>
+      <p>These are everyday calls.</p>
+      
+      <h2>What We Do</h2>
+      <p>At Macon Car Key Locksmith, we come out, take a look, and figure out what's actually causing the issue.</p>
+      <p>Then we fix that.</p>
+      <p>Not guessing.</p>
+      <p>Not replacing parts that don't need to be replaced.</p>
+      
+      <h2>Dodge / Jeep / Chrysler Key Help</h2>
+      <ul>
+        <li>• Lost keys</li>
+        <li>• Spare keys</li>
+        <li>• Ignition not turning</li>
+        <li>• Key stuck in ignition</li>
+        <li>• Smart key programming</li>
+        <li>• Push-to-start issues</li>
+        <li>• Lockouts</li>
+      </ul>
+      <p>Everything is done on-site.</p>
+      
+      <h2>A Smart Move (Most People Skip)</h2>
+      <p>Making a spare key before something happens is usually:</p>
+      <ul>
+        <li>• Faster</li>
+        <li>• Cheaper</li>
+        <li>• Way less stressful</li>
+      </ul>
+      <p>🚗 That's something people realize only after the first time.</p>
+      
+      <h2>🎉 Special Offers</h2>
+      <ul>
+        <li>• 🗝️ 50% OFF 2nd Car Key</li>
+        <li>• 🔑 $20 OFF Car Key Replacement</li>
+        <li>• 🔧 $25 OFF Ignition Repair</li>
+      </ul>
+      
+      <h2>⭐ What Customers Say</h2>
+      <blockquote>"Lost my key twice in one day — he still showed up and helped."</blockquote>
+      <blockquote>"Didn't think I needed a spare… now I have one."</blockquote>
+      <blockquote>"Fast, honest, and easy to work with."</blockquote>
+      
+      <h2>Frequently Asked Questions</h2>
+      <p><strong>Do I really need a spare key?</strong><br>
+      Yes — it can save you a lot of time and money.</p>
+      
+      <p><strong>Why is my key stuck in the ignition?</strong><br>
+      Usually ignition wear.</p>
+      
+      <p><strong>Can you fix this on-site?</strong><br>
+      Yes.</p>
+      
+      <p><strong>What happens if I ignore the problem?</strong><br>
+      It usually gets worse.</p>
+      
+      <h2>Final Call</h2>
+      <p>If your Dodge, Jeep, or Chrysler isn't starting or key is not working, don't wait.</p>
+      <p>Call Macon Car Key Locksmith and we'll come out and take a look.</p>
+      
+      <div class="cta-banner">
+        <a href="tel:5127885155" class="btn btn-primary btn-large">📞 (XXX) XXX-XXXX</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Macon Car Key Locksmith</h3>
+        <p>Professional mobile car key and ignition service in Macon, GA</p>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="honda.html">Honda / Acura</a></li>
+          <li><a href="toyota.html">Toyota / Lexus</a></li>
+          <li><a href="nissan.html">Nissan / Infiniti</a></li>
+          <li><a href="ford.html">Ford / Lincoln</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact</h4>
+        <p>📞 (XXX) XXX-XXXX</p>
+        <p>📍 Serving Macon, GA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Macon Car Key Locksmith. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
